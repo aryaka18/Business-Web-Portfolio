@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik+Mono+One&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+}
+body {
+  font-family: "Rubik Mono One", "QuickSand", sans-serif;
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #222222;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 1.5rem 1.5rem 0px;
+  gap: 15rem;
+  margin-inline: auto;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99999;
+  position: sticky;
+  top: 0;
+  background-color: #222222;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #f97300;
+}
+
+.logo span {
+  color: white;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 5rem;
+  padding: 0;
+}
+
+.navigation li {
+  list-style-type: none;
+}
+
+.navigation a {
+  padding: 0.5rem 1.5rem;
+  font-family: "QuickSand";
+  text-decoration: none;
+  border-radius: 999px;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.navigation li:hover a{
+  background-color: #636161;
+  border-radius: 20px;
+  color: white;
+}
+main {
+  display: flex;
+  width: 100%;
+  margin-inline: auto;
+  align-items: center;
+  max-width: 1200px;
+  padding: 2rem;
+  justify-content: center;
+  flex-direction: column;
+}
+#home {
+  display: flex;
+  flex-direction: row;
+  font-family: "QuickSand";
+  color: white;
+  margin-bottom: 25px;
+}
+#home img {
+  width: 40rem;
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: "QuickSand";
+  margin-left: 8px;
+}
+.home-content h2 {
+  margin: 0px 0px 4px 0px;
+}
+.orion {
+  color: #f97300;
+  font-family: "Rubik Mono One";
+  font-weight: 300;
+}
+.home-content span {
+  color: white;
+}
+.home-content button {
+  font-family: "QuickSand";
+  width: 12rem;
+  height: 3rem;
+  border-radius: 16px;
+  margin-top: 5px;
+  background-color: white;
+  color: #222222;
+  font-weight: bold;
+  border-style: none;
+  cursor: pointer;
+}
+
+.main-header {
+  font-size: 1.2rem;
+  color: white;
+}
+.main-header span {
+  color: #f97300;
+}
+#team {
+  margin-top: 50px;
+}
+.accordion {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.accordion-item {
+  flex: 0 0 auto;
+  border: 1px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+.accordion-header {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.accordion-header img {
+  width: 100px;
+  height: 400px;
+  object-fit: cover;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.accordion-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  max-height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-family: "QuickSand";
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom-left-radius: 1.5rem;
+}
+.accordion-content p {
+  margin: 0;
+}
+
+#contact {
+  color: white;
+  font-family: "QuickSand";
+  margin-top: 10rem;
+  align-self: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem;
+  display: flex;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.contact-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-desc span{
+  display: flex;
+}
+
+.contact-socmed ul {
+  display: flex;
+  flex-direction: row; 
+  list-style-type: none;
+  padding-left: 0;
+  gap: 1rem; 
+  margin: 0; 
+}
+
+#contact h2{
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: "Rubik Mono One";
+}
+#contact h2{
+  color: #f97300;
+}
+#contact span{
+  color: white;
+}
+.contact-socmed ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.contact-socmed img {
+  width: 30px;
+}
+iframe {
+  height: 250px;
+  width: 500px;
+  border: 0;
+}
+
+
+
